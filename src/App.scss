@@ -1,0 +1,221 @@
+$hue: 345;
+$saturation: 100%;
+$primary: hsla($hue, $saturation, 90%, 1);
+$primary-dark: hsla($hue, $saturation, 65%, 1);
+$gap: 20px;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.dFlex {
+    display: flex
+}
+.flexWrap {
+    flex-wrap: wrap;
+}
+.flex1 {
+    flex: 1;
+}
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: $gap;
+    background-color: $primary;
+    padding: $gap;
+    width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.page {
+    padding: $gap;
+    min-height: calc(100vh - 160px);
+    text-shadow: hsla($hue, 50%, 50%, 0.3) -10px 10px 15px;
+    input, select, button {
+        box-shadow: hsla($hue, 50%, 50%, 0.1) -10px 10px 15px 0px;
+
+    }
+}
+.block {
+    background-color: white;
+    border-radius: $gap;
+    padding: $gap;
+    box-shadow: inset hsla($hue, 50%, 50%, 0.15) -10px 10px 15px 0px;
+}
+h1, h3 {
+    color: $primary-dark;
+    text-shadow: hsla($hue, 50%, 50%, 0.3) -10px 10px 15px;
+    transition: 500ms;
+}
+input, select, button {
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 999px;
+    border: 2px solid $primary;
+}
+input, select {
+    
+    color: $primary-dark;
+    &::placeholder {
+        color: $primary;
+    }
+    &:focus {
+        outline:none;
+        border: 2px solid $primary-dark;
+    }
+}
+button {
+    cursor: pointer;
+    color: $primary;
+    background-color: white;
+    transition: 500ms;
+    padding: 7px 20px;
+    &:hover {
+        background-color: $primary;
+        border: 2px solid $primary-dark;
+        font-weight: bold;
+        color: $primary-dark;
+        transform: scale(1.2);
+        transition: 100ms;
+    }
+}
+input {
+    padding-left: 13px;
+}
+select {
+    padding-left: 8px;
+}
+.NavBar {
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    h1:hover {
+        transform: scale(1.1);
+        transition: 100ms;
+    }
+}
+.NavBar h1 {
+    cursor: pointer;
+}
+.LoginPage {
+    .forms {
+        display:flex;
+        justify-content: space-around;
+        gap: $gap;
+        .login, .register {
+            font-weight: bold;
+            color: $primary-dark;
+            display:flex;
+            flex-flow: column nowrap;
+            gap: calc($gap / 2);
+        }
+        .login .checkbox {
+            display: flex;
+            margin-left: 17px;
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.ProfilePage, .UsersPage {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: $gap;
+    .upload {
+        gap: $gap;
+        input {
+            width: 610px;
+            margin-right: $gap;
+        }
+    }
+    .Carousel .arrows {
+        opacity: 25%;
+    }
+}
+.UsersPage {
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        button {
+            font-size: 40px;
+            padding: 10px 40px;
+        }
+    }
+}
+.FilterPage {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: $gap;
+    input, select, div {
+        width: 50%;
+    }
+    div.range {
+        display: flex;
+        gap:$gap;
+        align-items: center;
+        h4 {
+            color: $primary-dark;
+        }
+        input {
+            width: 100%;
+            box-shadow: none;
+        }
+    }
+}
+.HistoryPage {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    .links{
+        display: flex;
+        justify-content: space-around;        
+        .link {
+            cursor: pointer;
+        }
+    }
+    .list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: $gap;
+        .user {
+            width: 350px;
+        }
+    }
+}
+.LoadingPage {
+    width: 100%;
+    height: 300px;
+    background-image: url('./images/loading.gif');
+}
+.Carousel {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: $gap;
+    overflow: hidden;
+    box-shadow: hsla($hue, 50%, 50%, 0.15) -10px 10px 15px 0px;
+    .arrows {
+        cursor: pointer;
+        text-shadow: none;
+        padding: $gap;
+        display: flex;
+        align-items: center;
+        font-size: 80px;
+        height: 100%;
+        color: $primary-dark;
+        background-color: $primary;
+        opacity: 0%;
+    }
+    .arrows:hover {
+        opacity: 25%;
+        
+    }
+}
