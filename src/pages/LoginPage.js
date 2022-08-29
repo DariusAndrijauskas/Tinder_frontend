@@ -75,7 +75,7 @@ const LoginPage = () => {
                     <select ref={gender}>
                         {genderList.map((x, i)=><option key={i} value={x}>{x}</option>)}
                     </select>
-                    <input ref={age} type='number' placeholder='age'/>
+                    <input ref={age} type='number' min='18' max='50' step='1' placeholder='age'/>
                     <button onClick={register}>Register</button>
                 </div>
             </div>

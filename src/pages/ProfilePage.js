@@ -20,8 +20,7 @@ const ProfilePage = () => {
     return (
         <div className='ProfilePage block page'>
             <Carousel user={user}/>
-            <h1>{user.username} {user.age} {user.gender}</h1>
-            <h1>{user.city}</h1>
+            <h1>{user.username}: a {user.age} year old {user.gender} in {user.city}</h1>
             <div className='upload'>
                 <input ref={img} type='text' placeholder='image url'/>
                 <button onClick={upload} >Upload</button>

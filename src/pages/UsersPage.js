@@ -39,8 +39,8 @@ const UsersPage = () => {
                 <Carousel user={users[0]} />
                 <h1>{users[0].username} {users[0].age}</h1>
                 <div className='buttons'>
-                    <button onClick={pass}>Pass</button>
-                    <button onClick={()=>like(users[0]._id)}>Like</button>
+                    <button onClick={pass}>Pass 👎🏼</button>
+                    <button onClick={()=>like(users[0]._id)}>Like 💖</button>
                 </div>
             </div>
             :
