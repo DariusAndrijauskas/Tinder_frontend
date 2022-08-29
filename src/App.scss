@@ -131,11 +131,17 @@ select {
             margin-right: $gap;
         }
     }
-    .Carousel .arrows {
-        opacity: 25%;
+    .Carousel {
+        height: 593px;
+        .arrows {
+            opacity: 25%;
+        }
     }
 }
 .UsersPage {
+    .Carousel {
+        height: 560px;
+    }
     .buttons {
         display: flex;
         justify-content: space-around;

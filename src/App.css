@@ -145,10 +145,16 @@ select {
   width: 610px;
   margin-right: 20px;
 }
+.ProfilePage .Carousel, .UsersPage .Carousel {
+  height: 593px;
+}
 .ProfilePage .Carousel .arrows, .UsersPage .Carousel .arrows {
   opacity: 25%;
 }
 
+.UsersPage .Carousel {
+  height: 560px;
+}
 .UsersPage .buttons {
   display: flex;
   justify-content: space-around;
