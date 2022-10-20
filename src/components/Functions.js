@@ -23,5 +23,3 @@ module.exports = {
     citiesList: ['Vilnius', 'Kaunas', 'Klaipėda', 'Šiauliai', 'Panevėžys', 'Utena', 'Marijampolė', 'Telšiai', 'Alytus', 'Tauragė'],
     genderList: ['male', 'female']
 }
-
-// fetchPost('setFilter', filter, data => setUser(data.user))

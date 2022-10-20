@@ -1,4 +1,3 @@
-import './Carousel.css'
 import {useState} from 'react';
 
 const Carousel = ({user}) => {

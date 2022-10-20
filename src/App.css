@@ -133,27 +133,36 @@ select {
   margin-right: 10px;
 }
 
-.ProfilePage, .UsersPage {
+.ProfilePage {
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
 }
-.ProfilePage .upload, .UsersPage .upload {
-  gap: 20px;
+.ProfilePage .upload {
+  display: flex;
+  align-items: flex-start;
 }
-.ProfilePage .upload input, .UsersPage .upload input {
-  width: 610px;
+.ProfilePage .upload input {
+  width: 600px;
   margin-right: 20px;
 }
-.ProfilePage .Carousel, .UsersPage .Carousel {
-  height: 593px;
+.ProfilePage .Carousel {
+  height: 550px;
 }
-.ProfilePage .Carousel .arrows, .UsersPage .Carousel .arrows {
+.ProfilePage .Carousel .arrows {
   opacity: 25%;
 }
 
+.UsersPage {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
 .UsersPage .Carousel {
   height: 560px;
+}
+.UsersPage .Carousel .arrows {
+  opacity: 25%;
 }
 .UsersPage .buttons {
   display: flex;

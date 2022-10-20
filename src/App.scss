@@ -59,7 +59,6 @@ input, select, button {
     }
 }
 input, select {
-    
     color: $primary-dark;
     &::placeholder {
         color: $primary;
@@ -120,27 +119,35 @@ select {
         }
     }
 }
-.ProfilePage, .UsersPage {
+.ProfilePage {
     display: flex;
     flex-flow: column nowrap;
+    // justify-content: space-between;
     gap: $gap;
     .upload {
-        gap: $gap;
+        display: flex;
+        align-items: flex-start;
         input {
-            width: 610px;
+            width: 600px;
             margin-right: $gap;
         }
     }
     .Carousel {
-        height: 593px;
+        height: 550px;
         .arrows {
             opacity: 25%;
         }
     }
 }
 .UsersPage {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: $gap;
     .Carousel {
         height: 560px;
+        .arrows {
+            opacity: 25%;
+        }
     }
     .buttons {
         display: flex;
